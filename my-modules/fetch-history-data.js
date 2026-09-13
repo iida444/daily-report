@@ -1,5 +1,5 @@
 // Cloud Firestoreから取得したデータを表示する
-export const fetchHistoryData = async () => {
+export const fetchHistoryData = async (getDocs, collection, db) => {
     let tags = '';
 
     // reportsコレクションのデータを取得
