@@ -5,12 +5,12 @@ import { submitData } from './my-modules/submit-data.js';
 
 // 設定情報
 const firebaseConfig = {
-    apiKey: 'AIzaSyD8hsdWBPmQcZfeohDLU2q19bC8NudTvzY',
-    authDomain: 'daily-report-20939.firebaseapp.com',
-    projectId: 'daily-report-20939',
-    storageBucket: 'daily-report-20939.firebasestorage.app',
-    messagingSenderId: '203671776711',
-    appId: '1:203671776711:web:f1c7d491ed1f32712e7de2',
+    apiKey: import.meta.env.VITE_API_KEY,
+    authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_APP_ID,
 };
 
 // Initialize Firebase
